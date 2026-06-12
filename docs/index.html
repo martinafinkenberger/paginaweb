@@ -23,45 +23,61 @@
 
         body{
             margin: 0;
-            padding: 40px;
+            padding: 0;
             background: var(--crema);
             font-family: "Lora", serif;
             color: var(--azul-oscuro);
-            line-height: 1.7;
-            text-align: justify;
         }
 
-        header{
-            margin-bottom: 30px;
+        /* contenedor centrado tipo webstory */
+        .contenedor{
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 60px 30px;
+            text-align: center;
         }
 
-        h1{
+        header h1{
             font-family: "Capriola", sans-serif;
             color: var(--marron);
             font-size: 36px;
-            margin-bottom: 10px;
-            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* línea divisoria borgoña */
+        .linea{
+            width: 120px;
+            height: 3px;
+            background: var(--burdeo);
+            margin: 0 auto 40px auto;
         }
 
         h2{
             font-family: "Capriola", sans-serif;
             color: var(--verde-petroleo);
-            margin-top: 30px;
-            text-align: left;
+            margin-top: 40px;
         }
 
         p{
             margin-bottom: 18px;
+            text-align: center;
+            line-height: 1.7;
         }
 
         a{
             color: var(--celeste);
         }
 
+        img{
+            max-width: 100%;
+            margin: 25px 0;
+        }
+
         .destacado{
             background: var(--amarillo);
             padding: 15px;
             border-left: 5px solid var(--verde);
+            text-align: center;
         }
 
         .alerta{
@@ -69,14 +85,9 @@
             font-weight: 700;
         }
 
-        img{
-            max-width: 100%;
-            margin: 20px 0;
-        }
-
         footer{
-            margin-top: 40px;
-            padding-top: 20px;
+            margin-top: 60px;
+            padding-top: 30px;
             border-top: 1px solid #ddd;
         }
     </style>
@@ -84,8 +95,11 @@
 
 <body>
 
+<div class="contenedor">
+
     <header>
         <h1>Regio: especies en peligro en Chile</h1>
+        <div class="linea"></div>
     </header>
 
     <div>
@@ -107,7 +121,7 @@
         </p>
 
         <p>
-            Y aunque el Borrachito se presenta como un habitante de un solo lugar, no todos los casos son así; al menos no el de Mordacia lapicida, también conocida como lamprea de agua dulce, un pez sin mandíbula que se remonta al período Paleozoico y que es considerado un fósil viviente.
+            Y aunque el Borrachito se presenta como un habitante de un solo lugar, no todos los casos son así; al menos no el de Mordacia lapicida, también conocida como lamprea de agua dulce, un pez sin mandíbula considerado un fósil viviente.
         </p>
 
         <img src="visualizacion.jpg" alt="Visualización de especies en peligro en Chile">
@@ -119,7 +133,7 @@
         <h2>Distribución de especies amenazadas en Chile</h2>
 
         <p>
-            Como estos dos, hay otros 222 animales en Chile que se encuentran en estas categorías, así como también en peligro raro de extinción. Dentro de este conjunto, los sapos destacan por su diversidad de colores, manchas y texturas, pero el Alsodes tumultuosus es un anfibio inigualable: sin importar el clima, anda con sostén los 365 días del año, uno que además tiene espinas.
+            Como estos dos, hay otros 222 animales en Chile que se encuentran en estas categorías, así como también en peligro raro de extinción. Dentro de este conjunto, los sapos destacan por su diversidad de colores, manchas y texturas, pero el Alsodes tumultuosus es un anfibio inigualable.
         </p>
 
         <p>
@@ -134,6 +148,8 @@
             Clasificación de especies del Ministerio del Medio Ambiente
         </a>
     </footer>
+
+</div>
 
 </body>
 </html>
